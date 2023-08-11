@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Selects</legend>
+            <p>
+                <label for="iestado">Estado:</label>
+                <select name="estado" id="iestado">
+
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP" selected>São Paulo </option>
+                    </optgroup>
+
+                    <optgroup label="Região do Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>
+                </select>
+                <p>
+                    <label for="iprof">Profissão:</label>
+                    <input type="text" name="iprof" id="iprof" list="iprofiss">
+                    <datalist id="iprofiss">
+                        <option value="Adm">Adm do discord</option>
+                        <option value="NERD">NERD DO CARALHO</option>
+                        <option value="Caça">Caçador de nerds escrotos fedidos</option>
+                    </datalist>
+                    <p>
+                        <label for="imsg">Mensagem:</label> <br>
+                        <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Deixe sua opnião do site aqui"></textarea>
+                    </p>
+                </p>
+            </p>
+        </fieldset>
+        <p><input type="submit" value="Entre">
+        <input type="reset" value="Apague"></p>
+    </form>
+</body>
+</html>
