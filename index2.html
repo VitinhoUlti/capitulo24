@@ -28,19 +28,31 @@
             <label for="imes">
                 Aniversario:
             </label>
-            <input type="month" name="mes" id="imes">
+            <input type="month" name="mes" id="imes" required autocomplete="bday">
         </p>
         <p>
             <label for="">
                 Dia do cadastro:
             </label>
-            <input type="date" name="date" id="date" placeholder="dia de hoje">
+            <input type="date" name="date" id="date" placeholder="dia de hoje" required autocomplete="bday">
         </p>
         <p>
             <label for="ihora">
                 Horario:
             </label>
-            <input type="time" name="hora" id="ihora">
+            <input type="time" name="hora" id="ihora" required >
+        </p>
+        <p>
+            <label for="iemail">
+                Email:
+            </label>
+            <input type="email" name="email" id="iemail" required placeholder="email@gmail.com" autocomplete="email">
+        </p>
+        <p>
+            <label for="itel">
+                Telefone:
+            </label>
+            <input type="tel" name="tel" id="itel" pattern="^[0-9]{2}[0-9]{7}$" placeholder="EX:449998767" required autocomplete="tel">
         </p>
         <input type="submit" value="entre">
         <input type="reset" value="apague" autocomplete="current-password"
